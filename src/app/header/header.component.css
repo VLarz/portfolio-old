@@ -9,12 +9,13 @@
 
 .header-section {
   margin-top: -64px;
-  z-index: -1;
 }
 
 .header-content {
-  margin-top: -480px;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .header-divider{
@@ -22,12 +23,14 @@
 }
 .lead{
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 100 !important;
 }
 
-h1 {
+.name{
+  font-weight: 600 !important;
   padding-bottom: 20px;
   border-bottom: 1px solid #FFFFFF;
   border-bottom-color: #FFFFFF;
   display: inline-block;
 }
+
