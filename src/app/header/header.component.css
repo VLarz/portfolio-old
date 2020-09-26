@@ -1,0 +1,33 @@
+.parallax img{
+  max-width: 100%;
+  height: auto;
+}
+
+.parallax-container {
+  height: 657px;
+}
+
+.header-section {
+  margin-top: -64px;
+  z-index: -1;
+}
+
+.header-content {
+  margin-top: -480px;
+  z-index: -1;
+}
+
+.header-divider{
+  width: 600px;
+}
+.lead{
+  font-size: 25px;
+  font-weight: 100;
+}
+
+h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: #FFFFFF;
+  display: inline-block;
+}

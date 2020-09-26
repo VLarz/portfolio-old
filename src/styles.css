@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Open Sans";
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.no-margin-btm{
+  margin-bottom: 0px !important;
+}
+
+.no-margin-top{
+  margin-top: 0px !important;
+}
