@@ -1,5 +1,8 @@
 .profile-picture {
   border: 5px solid #fff;
-  width: 200px;
+  width: 250px;
+  border-style: solid;
+  border-color: rgb(243, 239, 224);
+  border-width: 12px;
 }
 

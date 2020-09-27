@@ -14,13 +14,21 @@ body {
   margin-top: 0px !important;
 }
 
+.margin-btm-small{
+  margin-bottom: 15px;
+}
+
+.margin-btm-medium{
+  margin-bottom: 35px;
+}
+
 .section-header {
   color: #0060EE;
   font-weight: 300;
 }
 
 .section-sub {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100 !important;
   color: #283149;
 }
@@ -46,4 +54,8 @@ body {
 
 .black-text {
   color: #283149 !important;
+}
+
+.background-gray{
+  background: rgb(243, 239, 224);
 }

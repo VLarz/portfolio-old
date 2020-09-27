@@ -1,0 +1,17 @@
+.blue-chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 15px;
+  background-color: #283149;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.profile-picture {
+  width: 200px;
+}
