@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
     const nav = document.getElementById('nav');
 
     const navTransition = () => {
-      if (window.scrollY <= 660) {
+      if (window.scrollY <= 660){
         nav.classList.add('transparent');
         nav.classList.add('z-depth-0');
         nav.classList.remove('black');
