@@ -6,3 +6,9 @@
   border-width: 12px;
 }
 
+.btn, .btn-large, .btn-small {
+    color: #fff;
+    background-color: #0060EE;
+    text-align: center;
+    margin-right: 10px;
+}
