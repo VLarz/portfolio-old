@@ -15,3 +15,15 @@
 .profile-picture {
   width: 200px;
 }
+
+.project-referal{
+  font-style: italic;
+  color: #999999;
+}
+
+.btn, .btn-large, .btn-small {
+  color: #fff;
+  background-color: #0060EE;
+  text-align: center;
+  margin-right: 10px;
+}
