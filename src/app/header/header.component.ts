@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
     const parallax = document.querySelectorAll('.parallax');
     M.Parallax.init(parallax, null);
@@ -17,7 +18,7 @@ export class HeaderComponent implements OnInit {
     const nav = document.getElementById('nav');
 
     const navTransition = () => {
-      if (window.scrollY <= 660){
+      if (window.scrollY <= 635){
         nav.classList.add('transparent');
         nav.classList.add('z-depth-0');
         nav.classList.remove('black');
