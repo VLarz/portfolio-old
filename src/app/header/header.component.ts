@@ -15,6 +15,10 @@ export class HeaderComponent implements OnInit {
     const parallax = document.querySelectorAll('.parallax');
     M.Parallax.init(parallax, null);
 
+    const sidenav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenav, null);
+
+
     const nav = document.getElementById('nav');
 
     const navTransition = () => {

@@ -21,6 +21,7 @@
 .header-divider{
   width: 600px;
 }
+
 .lead{
   font-size: 25px;
   font-weight: 100 !important;
@@ -37,4 +38,28 @@
 .black{
   background: #283149!important;
 }
+
+
+@media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .lead{
+    font-size: 14x;
+    font-weight: 100 !important;
+  }
+
+  .parallax-container {
+    height: 570px;
+  }
+
+  .parallax img{
+    max-width: none;
+    height: none;
+    max-height: 150%;
+  }
+}
+
 
