@@ -39,7 +39,6 @@
   background: #283149!important;
 }
 
-
 @media screen and (max-width: 600px) {
 
   h1 {
@@ -61,5 +60,7 @@
     max-height: 150%;
   }
 }
+
+
 
 
