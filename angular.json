@@ -27,10 +27,12 @@
               "node_modules/materialize-css/dist/css/materialize.min.css",
               "node_modules/@mdi/font/css/materialdesignicons.min.css",
               "node_modules/open-sans-fonts/open-sans-ng.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/materialize-css/dist/js/materialize.min.js"
+              "node_modules/materialize-css/dist/js/materialize.min.js",
+              "node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {
