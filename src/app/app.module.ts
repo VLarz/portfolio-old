@@ -9,6 +9,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 
@@ -31,4 +32,5 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

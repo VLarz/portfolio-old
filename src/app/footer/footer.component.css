@@ -3,14 +3,14 @@
 }
 
 .gray-text{
-  color: #727878 !important;
+  color: white !important;
 }
 
 .gray-divider {
   height: 1px;
   overflow: hidden;
   opacity: 0.2;
-  background-color: #727878;
+  background-color: white;
 }
 
 .collection .collection-item {
