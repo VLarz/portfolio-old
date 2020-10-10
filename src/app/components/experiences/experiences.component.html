@@ -9,54 +9,31 @@
         <h3 class="blue-title">Careers</h3>
       </div>
     </div>
-    <div class="row" data-aos="fade-right" data-aos-offset="200">
+    <div class="row" data-aos="fade-right" data-aos-offset="100" *ngFor="let career of careers">
       <div class="col s12 m4">
-        <h4 class="experience-company no-margin-top">Calamba Doctors' College</h4>
-        <p>January 2020 - March 2020</p>
+        <h4 class="experience-company no-margin-top">{{ career?.companyName }}</h4>
+        <p> {{ career?.date }}</p>
       </div>
       <div class="col s12 m8">
-        <strong class="title-sub">Web Developer - Internship</strong>
-        <p>We redesigned and developed a website using Angular 8 and Materialize CSS here in Calamba Doctors' College. We also developed
-          a system such as a randomizer and a chatbox application for the use of student and faculty employees. We also
-          fixed their connection in every room and setup wireless connection to provide a connection to mobile
-         users.</p>
+        <strong class="title-sub">{{ career?.position }}</strong>
+        <p> {{ career?.description }}</p>
       </div>
     </div>
-    <div class="row" data-aos="fade-right" data-aos-offset="20" data-aos-delay="200">
-      <div class="col s12 m4">
-        <h4 class="experience-company no-margin-top">Dmay Net And Gaming</h4>
-        <p>October 2007 - Present</p>
-      </div>
-      <div class="col s12 m8">
-        <strong class="title-sub">Computer Technician - Family Business</strong>
-        <p>This is our business, a Computer Shop that consists of 14 units of computers and all of the computers
-         are diskless which employs network booting to load its operating system from a server. I and my brother
-        are the ones who managed and set up the computers. We also do services like printing, typing, editing, fixing
-        computers, and laptop. Here I learned to be patient in customers and always understand them. I also learned to troubleshoot
-        and always do research if you don't know the problem.
-      </p>
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-offset="100" data-aos-delay="200">
+    <div data-aos="fade-right" data-aos-offset="100">
       <div class="divider"></div>
       <div class="row">
         <div class="col s12 m12">
-          <h3 class="blue-title">Educations</h3>
+          <h3 class="blue-title">Education</h3>
         </div>
       </div>
       <div class="row">
         <div class="col s12 m4">
-          <h4 class="experience-company no-margin-top">STI Calamba College</h4>
-          <p>2016 - 2020</p>
+          <h4 class="experience-company no-margin-top">{{ education?.schoolName }}</h4>
+          <p>{{ education?.date }}</p>
         </div>
         <div class="col s12 m8">
-          <strong class="title-sub">Bachelor of Science in Information Technology</strong>
-          <p>STI College, formerly known as Systems Technology Institute, is the largest network
-            of for-profit information technology based colleges in the Philippines. This is where I learned
-          programming and slowly become addicted to developing applications and designing. I also learned
-          about MySQL, JavaScript, HTML, C#, and more. During my time in college, I specialized in .NET Application using C#. Here I
-          learned about the importance of OOP, user experience, and design.
-        </p>
+          <strong class="title-sub">{{ education?.course }}</strong>
+          <p>{{ education?.description }}</p>
         </div>
       </div>
     </div>

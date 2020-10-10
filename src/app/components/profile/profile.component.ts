@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Profile } from '../../models/profile.model';
+import { PortfolioService } from '../../services/portfolio.service';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -7,10 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  profile: Profile;
+
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.getProfile();
+  }
 
+  getProfile(): void {
+    this.portfolioService.getProfile().subscribe(res => this.profile = res);
+  }
+
+  getProfileUrl(name: string): string {
+    if (this.profile) {
+      return this.profile.links.find(x => x.name === name).url;
+    }
   }
 
 }

@@ -1,35 +1,32 @@
 <div id="profile" class="section">
   <div class="container margin-btm-medium">
     <h2 class="section-header center">Profile</h2>
-    <p class="center section-sub">I'm a Front-End Web Developer</p>
+    <p class="center section-sub"> </p>
     <div class="divider"></div>
     <div class="row">
       <div class="col s12 m4" data-aos="flip-left" data-aos-offset="200">
         <h3 class="blue-title">About me</h3>
-        <p>I'm a fresh graduate with experience in designing and developing systems
-          as well as web applications using Angular. I love spending time fixing little
-          details and I don't stop working until I've resolved any problem. I'm very passionate
-          about designing applications to make them look user-friendly and attractive.</p>
+        <p>{{profile?.about}}</p>
       </div>
       <div class="col s12 m4" data-aos="flip-left" data-aos-delay="200" data-aos-offset="200">
-        <img src="assets/images/profile-picture.jpg" alt="Primary" class="valign center-block circle profile-picture">
+        <img src="{{ profile?.image }}" alt="Primary" class="valign center-block circle profile-picture">
       </div>
       <div class="col s12 m4" data-aos="flip-left" data-aos-delay="400" data-aos-offset="200">
         <h3 class="blue-title ">Details</h3>
         <strong class="black-text title-sub">Name:</strong>
-        <p class="black-text no-margin-top">Vhen Larson Dela Cuesta</p>
+        <p class="black-text no-margin-top">{{ profile?.name }}</p>
         <strong class="black-text title-sub">Age:</strong>
-        <p class="black-text no-margin-top">22 years old</p>
+        <p class="black-text no-margin-top">{{ profile?.age }}</p>
         <strong class="black-text title-sub">Location:</strong>
-        <p class="black-text no-margin-top">Calamba City, Laguna</p>
+        <p class="black-text no-margin-top">{{ profile?.location }}</p>
       </div>
     </div>
     <div class="row">
       <div class="col s12 center">
-        <a target="_blank" href="https://www.linkedin.com/in/vlarz/" class="btn"><i class="mdi mdi-linkedin"></i>
+        <a target="_blank" href="{{ getProfileUrl('linkedIn') }}" class="btn"><i class="mdi mdi-linkedin"></i>
           LINKEDIN</a>
-        <a target="_blank" href="https://drive.google.com/file/d/1yrBQ3ec78jSVWOQ5xxSLPgvDt3gZH15s/view  "
-          class="btn"><i class="mdi mdi-file-account"></i> RESUME</a>
+        <a target="_blank" href="{{ getProfileUrl ('gDrive') }}" class="btn"><i class="mdi mdi-file-account"></i>
+          RESUME</a>
       </div>
     </div>
   </div>

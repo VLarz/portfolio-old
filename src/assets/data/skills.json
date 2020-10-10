@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Coding",
+    "image": "assets/images/coding.png",
+    "sets": ["Angular", "HTML", "CSS", "TypeScript", "JavaScript", "JSON", "C#", "MySQL", "Java"]
+    },
+  {
+    "name": "Design Language",
+    "image": "assets/images/design-language.png",
+    "sets": ["Material Design (Google)", "Bootstrap"]
+  },
+  {
+    "name": "Applications",
+    "image": "assets/images/application.png",
+    "sets": ["VS Code", "VS Community", "Git Extensions", "Laragon", "Photoshop", "Microsoft Office"]
+  }
+]

@@ -7,7 +7,6 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit{
   title = 'vlarz-portfolio';
-
   ngOnInit(): void {
     AOS.init();
   }
