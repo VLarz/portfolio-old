@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
         fullWidth: true,
         indicators: true,
       });
-    })
+    });
   }
 }
 
