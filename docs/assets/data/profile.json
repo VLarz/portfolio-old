@@ -1,0 +1,24 @@
+{
+  "position": "I'm a Front-End Web Developer",
+  "about": "I'm a fresh graduate with experience in designing and developing systems as well as web applications using Angular. I love spending time fixing little details and I don't stop working until I've resolved any problem. I'm very passionate about designing applications to make them look user-friendly and attractive.",
+  "image": "assets/images/profile-picture.jpg",
+  "name": "Vhen Larson Dela Cuesta",
+  "age": "22 years old",
+  "location": "Calamba City, Laguna",
+  "links": [
+    {
+      "name": "linkedIn",
+      "url": "https://www.linkedin.com/in/vlarz/"
+
+    },
+    {
+      "name": "gDrive",
+      "url": "https://drive.google.com/file/d/1yrBQ3ec78jSVWOQ5xxSLPgvDt3gZH15s/view"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/VLarz?tab=repositories"
+    }
+  ]
+}
+
