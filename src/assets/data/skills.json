@@ -2,7 +2,7 @@
   {
     "name": "Coding",
     "image": "assets/images/coding.png",
-    "sets": ["Angular", "HTML", "CSS", "TypeScript", "JavaScript", "JSON", "C#", "MySQL", "Java"]
+    "sets": ["Angular", "HTML", "CSS", "TypeScript", "JavaScript", "JSON", "RxJS", "Firebase", "C#", "MySQL", "Java"]
   },
   {
     "name": "Design Language",
