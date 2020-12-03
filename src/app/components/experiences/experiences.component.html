@@ -9,7 +9,7 @@
         <h3 class="blue-title">Careers</h3>
       </div>
     </div>
-    <div class="row" data-aos="fade-right" data-aos-offset="100" *ngFor="let career of careers">
+    <div class="row" data-aos="fade-right" *ngFor="let career of careers">
       <div class="col s12 m4">
         <h4 class="experience-company no-margin-top">{{ career?.companyName }}</h4>
         <p> {{ career?.date }}</p>
@@ -19,7 +19,7 @@
         <p> {{ career?.description }}</p>
       </div>
     </div>
-    <div data-aos="fade-right" data-aos-offset="100">
+    <div data-aos="fade-right">
       <div class="divider"></div>
       <div class="row">
         <div class="col s12 m12">

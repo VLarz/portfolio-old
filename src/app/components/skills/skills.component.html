@@ -5,7 +5,7 @@
     <p class="center section-sub no-margin-top"> - Ralph Waldo Emerson"</p>
     <div class="divider"></div>
     <div class="row">
-      <div class="col s12 m4" data-aos="zoom-in" data-aos-offset="200" *ngFor="let skill of skills">
+      <div class="col s12 m4" data-aos="zoom-in" *ngFor="let skill of skills">
         <h3 class="blue-title center">{{ skill?.name }}</h3>
         <img src="{{ skill?.image }}" alt="Primary" class="valign center-block profile-picture margin-btm-small">
         <div class="col s12 no-padding center">
