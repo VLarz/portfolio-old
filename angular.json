@@ -32,7 +32,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/tw-elements/dist/js/index.min.js"
+            ]
           },
           "configurations": {
             "production": {
