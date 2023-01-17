@@ -10,9 +10,7 @@
 @tailwind utilities;
 
 .container {
-    @apply max-w-7xl;
-    @apply m-auto;
-    @apply w-full;
+    @apply mx-auto;
 }
 
 .outline-button {
@@ -23,10 +21,14 @@
     @apply border-blue-600;
     @apply text-blue-600;
     @apply text-base;
-    @apply hover:opacity-80;
     @apply focus:outline-none;
     @apply focus:ring-0;
     @apply transition;
+    @apply hover-animation;
+}
+
+.hover-animation {
     @apply duration-150;
     @apply ease-in-out;
+    @apply hover:opacity-80;
 }
