@@ -5,55 +5,86 @@
 @import '@fontsource/inter/800';
 @import '@fontsource/inter/900';
 
+@import '@fontsource/poppins/400';
+@import '@fontsource/poppins/500';
+@import '@fontsource/poppins/600';
+@import '@fontsource/poppins/700';
+@import '@fontsource/poppins/800';
+@import '@fontsource/poppins/900';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    @apply text-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-sans;
+}
+
+span,
+a,
+p {
+    @apply font-serif;
+    @apply text-gray;
+}
 
 .container {
     @apply mx-auto;
 }
 
-.outline-button {
-    @apply inline-block;
-    @apply px-7;
-    @apply py-4;
-    @apply border-4;
-    @apply border-blue-600;
-    @apply text-blue-600;
-    @apply text-base;
-    @apply focus:outline-none;
-    @apply focus:ring-0;
-    @apply transition;
-    @apply hover-animation;
-}
-
-.hover-animation {
-    @apply duration-150;
-    @apply ease-in-out;
-    @apply hover:opacity-80;
-}
-
-section {
-    padding: 200px 0;
-}
-
-.section-title {
-    @apply text-4xl;
-    @apply font-bold;
-    @apply mb-3;
-}
-.section-divider {
-    @apply flex;
-    @apply flex-col;
-    @apply gap-1;
-    &::after {
-        @apply h-[3px];
-        @apply w-12;
-        @apply bg-blue-700 #{!important};
+@layer utilities {
+    .outline-button {
+        @apply inline-block;
+        @apply px-7;
+        @apply py-4;
+        @apply border-4;
+        @apply border-primary;
+        @apply text-primary;
+        @apply text-base;
+        @apply focus:outline-none;
+        @apply focus:ring-0;
+        @apply transition;
+        @apply hover-animation;
+        @apply font-sans;
     }
-    &::before {
-        @apply h-[3px];
-        @apply w-20;
-        @apply bg-blue-700 #{!important};
+
+    .hover-animation {
+        @apply duration-150;
+        @apply ease-in-out;
+        @apply hover:opacity-80;
+    }
+
+    section {
+        padding: 200px 0;
+    }
+
+    .section-title {
+        @apply text-4xl;
+        @apply font-bold;
+        @apply mb-3;
+    }
+
+    .section-divider {
+        @apply flex;
+        @apply flex-col;
+        @apply gap-1;
+        &::after {
+            @apply h-[3px];
+            @apply w-12;
+            @apply bg-primary #{!important};
+        }
+        &::before {
+            @apply h-[3px];
+            @apply w-20;
+            @apply bg-primary #{!important};
+        }
     }
 }
