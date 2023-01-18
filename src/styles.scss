@@ -32,3 +32,28 @@
     @apply ease-in-out;
     @apply hover:opacity-80;
 }
+
+section {
+    padding: 200px 0;
+}
+
+.section-title {
+    @apply text-4xl;
+    @apply font-bold;
+    @apply mb-3;
+}
+.section-divider {
+    @apply flex;
+    @apply flex-col;
+    @apply gap-1;
+    &::after {
+        @apply h-[3px];
+        @apply w-12;
+        @apply bg-blue-700 #{!important};
+    }
+    &::before {
+        @apply h-[3px];
+        @apply w-20;
+        @apply bg-blue-700 #{!important};
+    }
+}
