@@ -4,5 +4,5 @@ export interface WorkExperience {
     position: string;
     company: string;
     companyWebsite: string;
-    jobDescription: string[];
+    jobDescriptions: string[];
 }

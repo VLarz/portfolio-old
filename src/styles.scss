@@ -85,12 +85,12 @@ p {
         @apply flex-col;
         @apply gap-1;
         &::after {
-            @apply h-[3px];
+            @apply h-[2px];
             @apply w-12;
             @apply bg-primary #{!important};
         }
         &::before {
-            @apply h-[3px];
+            @apply h-[2px];
             @apply w-20;
             @apply bg-primary #{!important};
         }

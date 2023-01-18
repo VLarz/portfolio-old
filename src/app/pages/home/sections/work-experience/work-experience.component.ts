@@ -15,7 +15,7 @@ export class WorkExperienceComponent {
             position: 'Front-End Web Developer & UI/UX Designer',
             company: 'Cloud Panda PH (Full Time)',
             companyWebsite: 'https://cloudpanda.ph/',
-            jobDescription: [
+            jobDescriptions: [
                 'Optimize applications for maximum speed, scalability and accessibility.',
                 'Designed and developed responsive website using CodeIgniter, HTML, SCSS, Bootstrap and JavaScript.',
                 'Propose and implement new tools, best practices and standards.',
@@ -33,7 +33,7 @@ export class WorkExperienceComponent {
             position: 'Web3 Front-End Web Developer & UI/UX Designer',
             company: 'The QuestHub (Part-Time)',
             companyWebsite: 'https://thequesthub.io/',
-            jobDescription: [
+            jobDescriptions: [
                 'Build reusable code and libraries for future use.',
                 'Optimize applications for maximum speed, scalability and accessibility.',
                 'Propose and implement new tools, best practices and standards.',

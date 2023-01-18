@@ -7,9 +7,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeroBannerComponent } from './pages/home/sections/hero-banner/hero-banner.component';
 import { AboutMeComponent } from './pages/home/sections/about-me/about-me.component';
 import { WorkExperienceComponent } from './pages/home/sections/work-experience/work-experience.component';
+import { TechnicalSkillsComponent } from './pages/home/sections/technical-skills/technical-skills.component';
 
 @NgModule({
-    declarations: [AppComponent, HomeComponent, HeroBannerComponent, AboutMeComponent, WorkExperienceComponent],
+    declarations: [AppComponent, HomeComponent, HeroBannerComponent, AboutMeComponent, WorkExperienceComponent, TechnicalSkillsComponent],
     providers: [],
     bootstrap: [AppComponent],
     imports: [BrowserModule, AppRoutingModule],
