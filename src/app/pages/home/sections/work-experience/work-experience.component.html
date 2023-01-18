@@ -1,0 +1,39 @@
+<section>
+    <div class="container">
+        <div class="bg-[#F8F9FB] py-20 px-16">
+            <div class="flex flex-col gap-20">
+                <div>
+                    <h1 class="section-title">Work <span class="text-primary">Experience</span></h1>
+                    <div class="section-divider after:bg-black before:bg-black"></div>
+                </div>
+                <div class="space-y-16">
+                    <div class="grid grid-cols-[200px,1fr]" *ngFor="let experience of workExperience">
+                        <div>
+                            <span class="font-sans text-secondary text-lg"
+                                >{{ experience?.startDate }} <br />
+                                to {{ experience?.endDate }}
+                            </span>
+                        </div>
+                        <div class="flex flex-col gap-16">
+                            <div class="bg-white box-shadow p-12">
+                                <h1 class="text-xl font-medium">{{ experience?.position }}</h1>
+                                <a
+                                    href="{{ experience?.companyWebsite }}"
+                                    class="text-primary text-sm hover:underline"
+                                    target="_blank"
+                                    >{{ experience?.company }}</a
+                                >
+                                <ul class="list-disc list-inside space-y-1 mt-4">
+                                    <li *ngFor="let description of experience.jobDescription">
+                                        {{ description }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="outline-button ml-auto">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>

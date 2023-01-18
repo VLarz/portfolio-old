@@ -3,5 +3,6 @@ export interface WorkExperience {
     endDate: string;
     position: string;
     company: string;
+    companyWebsite: string;
     jobDescription: string[];
 }
