@@ -22,6 +22,6 @@ export class HeroBannerComponent {
                 }, step);
         }
 
-        counter('projectCompleted', 0, 24, 1500);
+        counter('projectCompleted', 0, 24, 1000);
     }
 }
