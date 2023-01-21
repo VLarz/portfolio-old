@@ -7,30 +7,33 @@
             </div>
         </div>
         <div class="grid grid-cols-2 gap-y-16 gap-x-16">
-            <div *ngFor="let project of myProjects; let i = index">
-                <div class="flex flex-col rounded-md card-shadow overflow-hidden h-full" *ngIf="i < 6">
-                    <img
-                        src="assets/images/my-projects/{{ project?.image }}"
-                        class="h-96 object-cover {{ project?.imagePosition }}"
-                        alt="{{ project?.title }}"
-                    />
-                    <div class="flex flex-col gap-4 p-8">
-                        <h1 class="text-xl font-bold">{{ project?.title }}</h1>
-                        <div class="flex gap-4">
-                            <a
-                                href="{{ link?.url }}"
-                                target="_blank"
-                                class="text-primary hover:underline"
-                                *ngFor="let link of project?.links"
-                                >{{ link?.text }}</a
-                            >
-                        </div>
+            <div
+                class="flex flex-col rounded-md card-shadow overflow-hidden h-full"
+                *ngFor="let project of myProjects | slice : 0 : showLimit; let i = index"
+            >
+                <img
+                    src="assets/images/my-projects/{{ project?.image }}"
+                    class="h-96 object-cover {{ project?.imagePosition }}"
+                    alt="{{ project?.title }}"
+                />
+                <div class="flex flex-col gap-4 p-8">
+                    <h1 class="text-xl font-bold">{{ project?.title }}</h1>
+                    <div class="flex gap-4">
+                        <a
+                            href="{{ link?.url }}"
+                            target="_blank"
+                            class="text-primary hover:underline"
+                            *ngFor="let link of project?.links"
+                            >{{ link?.text }}</a
+                        >
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8">
-            <button class="outline-button">View More</button>
+        <div class="flex justify-center mt-16" #viewMore>
+            <button class="outline-button" (click)="showAllProjects(); viewMore.classList.add('!hidden')">
+                View More
+            </button>
         </div>
     </div>
 </section>
