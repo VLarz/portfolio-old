@@ -16,7 +16,7 @@
                         </div>
                         <div class="flex flex-col gap-16">
                             <div class="bg-white box-shadow p-12">
-                                <h1 class="text-xl font-medium">{{ experience?.position }}</h1>
+                                <h1 class="text-xl font-bold">{{ experience?.position }}</h1>
                                 <a
                                     href="{{ experience?.companyWebsite }}"
                                     class="text-primary text-sm hover:underline"
@@ -24,7 +24,7 @@
                                     >{{ experience?.company }}</a
                                 >
                                 <ul class="list-disc list-inside space-y-1 mt-4">
-                                    <li *ngFor="let description of experience.jobDescriptions">
+                                    <li class="text-secondary" *ngFor="let description of experience.jobDescriptions">
                                         {{ description }}
                                     </li>
                                 </ul>
