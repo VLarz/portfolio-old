@@ -85,7 +85,7 @@ export class MyProjectsComponent {
             title: 'coffee:life',
             links: [
                 {
-                    url: 'https://coffeelife.ph/',
+                    url: 'https://coffeelife.ph/home',
                     text: 'Visit Website',
                 },
                 {
