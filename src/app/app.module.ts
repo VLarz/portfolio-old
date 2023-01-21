@@ -6,10 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutMeComponent } from './pages/home/sections/about-me/about-me.component';
+import { ContactComponent } from './pages/home/sections/contact/contact.component';
 import { HeroBannerComponent } from './pages/home/sections/hero-banner/hero-banner.component';
 import { MyProjectsComponent } from './pages/home/sections/my-projects/my-projects.component';
 import { TechnicalSkillsComponent } from './pages/home/sections/technical-skills/technical-skills.component';
 import { WorkExperienceComponent } from './pages/home/sections/work-experience/work-experience.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { NavbarComponent } from './shared/header/navbar/navbar.component';
+import { SidebarComponent } from './shared/header/sidebar/sidebar.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +25,11 @@ import { WorkExperienceComponent } from './pages/home/sections/work-experience/w
         WorkExperienceComponent,
         TechnicalSkillsComponent,
         MyProjectsComponent,
+        ContactComponent,
+        FooterComponent,
+        HeaderComponent,
+        NavbarComponent,
+        SidebarComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
