@@ -7,3 +7,26 @@
     background-position: center;
     background-size: cover;
 }
+
+// @property --num {
+//     syntax: '<integer>';
+//     initial-value: 0;
+//     inherits: false;
+// }
+
+// .animate-count {
+//     animation: counter 2s ease-in-out;
+//     counter-reset: num var(--num);
+// }
+// .animate-count::after {
+//     content: counter(num);
+// }
+
+// @keyframes counter {
+//     from {
+//         --num: 0;
+//     }
+//     to {
+//         --num: 24;
+//     }
+// }
