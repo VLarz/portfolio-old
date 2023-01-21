@@ -9,7 +9,7 @@ export class AboutMeComponent {
         let startDate: any = new Date('2021-01-25');
         let currentDate: any = new Date(new Date().valueOf() - startDate);
         let months: any = currentDate.getMonth() == 1 ? 'month' : 'months';
-        let years: any = currentDate.toISOString().slice(0, 4) == 1 ? 'year' : 'years';
+        let years: any = currentDate.toISOString().slice(0, 4) - 1970 < 2 ? 'year' : 'years';
         return `${currentDate.toISOString().slice(0, 4) - 1970} ${years} ${currentDate.getMonth()} ${months}`;
     }
 
