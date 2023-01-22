@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
 
         if (nav && menuIcon) {
             const navTransition = () => {
-                if (window.scrollY <= 635) {
+                if (window.scrollY <= 300) {
                     nav.classList.remove('bg-white', 'text-secondary');
                     menuIcon.classList.remove('!stroke-black');
                     menuText.forEach(element => {
