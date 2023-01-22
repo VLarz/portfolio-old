@@ -6,14 +6,17 @@
                 <div class="section-divider items-center after:bg-black before:bg-black"></div>
             </div>
         </div>
-        <div class="grid grid-cols-3">
-            <div class="flex flex-col items-center gap-12 p-24" *ngFor="let technicalSkill of technicalSkills">
+        <div class="flex flex-wrap lg:grid md:grid-cols-2 lg:grid-cols-3">
+            <div
+                class="flex flex-col items-center gap-12 p-16 xl:p-24 w-full"
+                *ngFor="let technicalSkill of technicalSkills"
+            >
                 <img
                     src="assets/images/home/technical-skills/{{ technicalSkill?.icon }}.svg"
                     class="icon"
                     alt="Coding icon"
                 />
-                <h6 class="text-xl font-bold">{{ technicalSkill?.title }}</h6>
+                <h6 class="text-xl font-bold text-center">{{ technicalSkill?.title }}</h6>
                 <div class="flex flex-wrap justify-center gap-4">
                     <span *ngFor="let skill of technicalSkill.skills">{{ skill }}</span>
                 </div>
