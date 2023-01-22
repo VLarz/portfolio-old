@@ -1,37 +1,38 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExperiencesComponent } from './components/experiences/experiences.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutMeComponent } from './pages/home/sections/about-me/about-me.component';
+import { ContactComponent } from './pages/home/sections/contact/contact.component';
+import { HeroBannerComponent } from './pages/home/sections/hero-banner/hero-banner.component';
+import { MyProjectsComponent } from './pages/home/sections/my-projects/my-projects.component';
+import { TechnicalSkillsComponent } from './pages/home/sections/technical-skills/technical-skills.component';
+import { WorkExperienceComponent } from './pages/home/sections/work-experience/work-experience.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { NavbarComponent } from './shared/header/navbar/navbar.component';
+import { SidebarComponent } from './shared/header/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    ProfileComponent,
-    SkillsComponent,
-    ExperiencesComponent,
-    ProjectsComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgxPageScrollCoreModule.forRoot({ duration: 300, scrollOffset: 15 }),
-    NgxPageScrollModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        HeroBannerComponent,
+        AboutMeComponent,
+        WorkExperienceComponent,
+        TechnicalSkillsComponent,
+        MyProjectsComponent,
+        ContactComponent,
+        FooterComponent,
+        HeaderComponent,
+        NavbarComponent,
+        SidebarComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [BrowserModule, AppRoutingModule, CommonModule],
 })
-
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,16 @@
+<div
+    class="fixed mr-[-256px] z-50 right-0 top-0 h-full flex flex-col gap-8 w-[256px] bg-white py-16 px-8 transition-all"
+    id="mobileNav"
+>
+    <a href="#about" class="text-secondary">About</a>
+    <a href="#experience" class="text-secondary">Experience</a>
+    <a href="#skills" class="text-secondary">Skills</a>
+    <a href="#projects" class="text-secondary">Projects</a>
+    <a href="#contact" class="text-secondary">Contact</a>
+</div>
+
+<div
+    class="fixed z-40 top-0 right-0 bg-black bg-opacity-40 h-full w-full hidden"
+    (click)="closeNav()"
+    id="overlay"
+></div>

@@ -1,0 +1,100 @@
+@import '@fontsource/inter/400';
+@import '@fontsource/inter/500';
+@import '@fontsource/inter/600';
+@import '@fontsource/inter/700';
+@import '@fontsource/inter/800';
+@import '@fontsource/inter/900';
+
+@import '@fontsource/poppins/400';
+@import '@fontsource/poppins/500';
+@import '@fontsource/poppins/600';
+@import '@fontsource/poppins/700';
+@import '@fontsource/poppins/800';
+@import '@fontsource/poppins/900';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-secondary;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-sans;
+}
+
+span,
+a,
+p,
+li {
+    @apply font-serif;
+    @apply text-gray;
+}
+p {
+    @apply leading-8;
+}
+
+.container {
+    @apply mx-auto;
+}
+
+.box-shadow {
+    box-shadow: 0px 15px 30px rgba(0, 11, 40, 0.06);
+}
+
+@layer utilities {
+    .outline-button {
+        @apply inline-block;
+        @apply px-7;
+        @apply py-4;
+        @apply border-4;
+        @apply border-primary;
+        @apply text-primary;
+        @apply text-base;
+        @apply focus:outline-none;
+        @apply focus:ring-0;
+        @apply transition;
+        @apply hover-animation;
+        @apply font-sans;
+    }
+
+    .hover-animation {
+        @apply duration-150;
+        @apply ease-in-out;
+        @apply hover:opacity-80;
+    }
+
+    section {
+        @apply py-[100px];
+        @apply px-4 md:px-8 lg:px-8 xl:px-0;
+    }
+
+    .section-title {
+        @apply text-4xl;
+        @apply font-bold;
+        @apply mb-3;
+    }
+
+    .section-divider {
+        @apply flex;
+        @apply flex-col;
+        @apply gap-1;
+        &::after {
+            @apply h-[2px];
+            @apply w-12;
+            @apply bg-primary #{!important};
+        }
+        &::before {
+            @apply h-[2px];
+            @apply w-20;
+            @apply bg-primary #{!important};
+        }
+    }
+}

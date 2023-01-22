@@ -1,0 +1,34 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+svg {
+    min-height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+svg line {
+    stroke: inherit;
+    stroke-width: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+button {
+    z-index: 20;
+}

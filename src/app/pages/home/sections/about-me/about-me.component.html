@@ -1,0 +1,36 @@
+<section id="about">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div class="flex flex-col gap-12">
+                <div>
+                    <h1 class="section-title">About <span class="text-primary">Me</span></h1>
+                    <div class="section-divider after:bg-black before:bg-black"></div>
+                </div>
+                <p>
+                    Hi, I'm Vhen Larson Dela Cuesta a Front-End Web Developer and UI/UX Designer and I love spending
+                    time fixing little details and passionate about designing applications to make them look
+                    user-friendly and attractive.
+                </p>
+                <div class="flex justify-center lg:justify-between flex-wrap gap-8">
+                    <div class="flex flex-col justify-center gap-3">
+                        <span class="font-medium text-secondary">{{ getYearExperience() }}</span>
+                        <img src="assets/images/home/about-me/briefcase.svg" class="h-6" alt="Briefcase icon" />
+                    </div>
+                    <div class="flex flex-col justify-center gap-3">
+                        <span class="font-medium text-secondary">{{ getAge() }}</span>
+                        <img src="assets/images/home/about-me/calendar.svg" class="h-6" alt="Calendar icon" />
+                    </div>
+                    <div class="flex flex-col justify-center gap-3">
+                        <span class="font-medium text-secondary">Philippines</span>
+                        <img src="assets/images/home/about-me/location.svg" class="h-6" alt="Location icon" />
+                    </div>
+                </div>
+            </div>
+            <img
+                src="assets/images/home/about-me/profile-photo.jpg"
+                class="m-auto md:ml-auto"
+                alt="Vhen Larson Dela Cuesta"
+            />
+        </div>
+    </div>
+</section>

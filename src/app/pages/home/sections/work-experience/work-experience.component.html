@@ -1,0 +1,41 @@
+<section id="experience">
+    <div class="container">
+        <div class="md:bg-[#F8F9FB] md:py-20 md:px-16">
+            <div class="flex flex-col gap-20">
+                <div>
+                    <h1 class="section-title">Work <span class="text-primary">Experience</span></h1>
+                    <div class="section-divider after:bg-black before:bg-black"></div>
+                </div>
+                <div class="space-y-16">
+                    <div class="grid md:grid-cols-[200px,1fr] gap-4 md:gap-0" *ngFor="let experience of workExperience">
+                        <div>
+                            <span class="font-sans text-secondary text-lg font-semibold md:font-normal"
+                                >{{ experience?.startDate }} <br />
+                                to {{ experience?.endDate }}
+                            </span>
+                        </div>
+                        <div class="flex flex-col gap-16">
+                            <div class="bg-white box-shadow p-12">
+                                <h1 class="text-xl font-bold">{{ experience?.position }}</h1>
+                                <a
+                                    href="{{ experience?.companyWebsite }}"
+                                    class="text-primary text-sm hover:underline"
+                                    target="_blank"
+                                    >{{ experience?.company }}</a
+                                >
+                                <ul class="list-disc list-inside space-y-1 mt-4">
+                                    <li class="text-secondary" *ngFor="let description of experience.jobDescriptions">
+                                        {{ description }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="assets/file/DELA CUESTA, VHEN LARSON A. - RESUME.pdf" class="outline-button ml-auto" download
+                    >Download Resume</a
+                >
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<nav class="fixed z-30 top-0 w-full p-8 transition" id="navbar">
+    <div class="container flex justify-between items-center">
+        <a routerLink="/" class="text-3xl font-bold font-sans text-white menu-text">VLarz</a>
+        <div class="hidden md:flex gap-8">
+            <a href="#about" class="text-white font-medium menu-text hover-underline-animation after:bg-white">About</a>
+            <a href="#experience" class="text-white font-medium menu-text hover-underline-animation after:bg-white"
+                >Experience</a
+            >
+            <a href="#skills" class="text-white font-medium menu-text hover-underline-animation after:bg-white"
+                >Skills</a
+            >
+            <a href="#projects" class="text-white font-medium menu-text hover-underline-animation after:bg-white"
+                >Projects</a
+            >
+            <a href="#contact" class="text-white font-medium menu-text hover-underline-animation after:bg-white"
+                >Contact</a
+            >
+        </div>
+        <button class="block md:hidden" (click)="openNav()">
+            <svg width="24" height="24" class="stroke-white" id="menuIcon">
+                <line id="top" x1="0" y1="2" x2="32" y2="2"></line>
+                <line id="middle" x1="0" y1="12" x2="32" y2="12" class="svelte-vy7ir8"></line>
+                <line id="bottom" x1="0" y1="22" x2="32" y2="22" class="svelte-vy7ir8"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
