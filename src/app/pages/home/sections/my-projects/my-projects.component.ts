@@ -111,6 +111,21 @@ export class MyProjectsComponent {
             imagePosition: 'object-center',
         },
         {
+            image: 'coppermask.png',
+            title: 'CopperMask PH',
+            links: [
+                {
+                    url: 'https://coppermask.ph/',
+                    text: 'Visit Website',
+                },
+                {
+                    url: 'https://www.figma.com/file/GuksEJW3TDCPgpnbf4gz6N/CopperMask-Website-Revamp?node-id=0%3A1&t=2otZQEH9RGE7Ob9O-1',
+                    text: 'Visit Figma',
+                },
+            ],
+            imagePosition: 'object-center',
+        },
+        {
             image: 'toktokwallet.png',
             title: 'toktokwallet',
             links: [
